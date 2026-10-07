@@ -3,7 +3,7 @@ name: "poli0981.dev"
 tagline: "Trang cá nhân — Astro + Cloudflare, tối giản, bền và gần như miễn phí."
 lang: vi
 stack: [Astro, Svelte, Tailwind, "Cloudflare Workers", TypeScript]
-repo: https://github.com/poli0981/poli0981.dev
+repo: https://github.com/poli0981/poli0981-dev
 url: https://poli0981.dev
 status: active
 featured: true
