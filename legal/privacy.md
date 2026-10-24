@@ -1,7 +1,7 @@
 ---
 title: "Bảo mật / Privacy Policy"
 order: 2
-effectiveDate: "2026-10-07"
+effectiveDate: "2026-10-24"
 ---
 
 ## English
@@ -12,15 +12,15 @@ This is a personal website designed to collect as little data as possible.
 
 **2. Analytics.** The Site uses Cloudflare Web Analytics, a cookie-free, privacy-focused service that reports aggregate statistics (page views, country, browser type, page-load performance). Pages load its small script from static.cloudflareinsights.com, which reports to Cloudflare. It sets no cookies and does not build visitor profiles.
 
-**3. Hosting & security logs.** The Site runs on Cloudflare. Like virtually all websites, requests pass through infrastructure that processes IP addresses and request metadata for security (DDoS mitigation, abuse prevention, rate limiting). I use IP addresses only transiently for rate limiting and blocking abuse; they are not stored in my own records.
+**3. Hosting & security logs.** The Site runs on Cloudflare Workers. Like virtually all websites, requests pass through infrastructure that processes IP addresses and request metadata for security (DDoS mitigation, abuse prevention, rate limiting). The Site also keeps short-lived technical request logs (Cloudflare Workers Logs: the page path without its query string, the response status, timing, errors, and request metadata such as IP address, country and browser type), which Cloudflare deletes after 7 days. I use them only to fix problems and stop abuse. An IP address or range is kept longer only if I block it for abuse, and every such block has an expiry.
 
 **Bot check.** Before your first page view the Site runs Cloudflare Turnstile, a challenge that checks the browser is not an automated scraper; Cloudflare processes technical signals for it (such as IP address and browser characteristics) under its own privacy policy. Passing it sets one strictly necessary cookie, `__Host-gate`, valid for 48 hours. It holds only an expiry time, a random value and a signature — nothing that identifies you — and is never used for tracking. Search engines and link-preview services verified by Cloudflare skip the check; feeds, the sitemap and the legal pages are always open.
 
-**4. Bug reports (the only form on the Site).** If you choose to send a bug report, the following is transmitted and stored as a private GitHub issue and a Discord notification: your description, the page route, browser user-agent, viewport size, theme/language setting, and — only if you leave the checkbox enabled — the last console error messages shown to you in a preview before sending. No IP address is stored with the report. Contact me to request deletion of a report you sent.
+**4. Bug reports (the only form on the Site).** If you choose to send a bug report, the following is transmitted and stored as an issue in a private GitHub repository (visible only to me) and sent as a Discord notification: your description, the page route, browser user-agent, viewport size, theme/language setting, and — only if you leave the checkbox enabled — the last console error messages shown to you in a preview before sending. No IP address is stored with the report. Contact me to request deletion of a report you sent.
 
-**5. Embedded videos.** YouTube videos load only after you click them, via YouTube's privacy-enhanced domain (youtube-nocookie.com). Before you click, only a static thumbnail is loaded. Once you click, YouTube's own privacy policy applies.
+**5. Embedded videos and widget images.** YouTube videos load only after you click them, via YouTube's privacy-enhanced domain (youtube-nocookie.com). Before you click, the video thumbnail — like the game icons in the home-page widgets — is a copy served by this Site, so your browser does not contact YouTube or Steam just to show the page. Once you click, YouTube's own privacy policy applies.
 
-**6. Local storage.** The Site stores small preferences in your browser only: theme, scrollbar visibility, reading settings, legal-notice acknowledgement, and (if you play the offline mini-game) a best score. These never leave your device.
+**6. Local storage.** The Site stores small preferences in your browser only: theme, scrollbar visibility, reading settings, legal-notice acknowledgement, and (if you play the offline mini-game) a best score. To work offline, a service worker also keeps the offline page and some of the Site's own script and style files in your browser's cache. None of this ever leaves your device.
 
 **7. Email.** Mail sent to any @poli0981.dev address (contact@, privacy@, security@, and the other topic addresses listed on the Site) is delivered to my mailbox on Google Workspace (Google LLC processes it under its own terms) and kept as normal correspondence.
 
@@ -38,15 +38,15 @@ This is a personal website designed to collect as little data as possible.
 
 **2. Thống kê truy cập.** Trang web dùng Cloudflare Web Analytics — dịch vụ không cookie, tôn trọng quyền riêng tư, chỉ báo số liệu tổng hợp (lượt xem, quốc gia, loại trình duyệt, tốc độ tải trang). Các trang tải một script nhỏ từ static.cloudflareinsights.com và gửi số liệu về Cloudflare. Script không đặt cookie và không dựng hồ sơ người xem.
 
-**3. Hạ tầng & log bảo mật.** Trang web chạy trên Cloudflare. Như hầu hết website, request đi qua hạ tầng có xử lý địa chỉ IP và metadata cho mục đích bảo mật (chống DDoS, chống lạm dụng, rate limiting). Mình chỉ dùng IP thoáng qua để giới hạn tần suất và chặn phá hoại; IP không được lưu trong hồ sơ riêng của mình.
+**3. Hạ tầng & log bảo mật.** Trang web chạy trên Cloudflare Workers. Như hầu hết website, request đi qua hạ tầng có xử lý địa chỉ IP và metadata cho mục đích bảo mật (chống DDoS, chống lạm dụng, rate limiting). Trang cũng giữ log kỹ thuật ngắn hạn cho từng request (Cloudflare Workers Logs: đường dẫn trang không kèm query string, mã trạng thái, thời gian xử lý, lỗi, và metadata như địa chỉ IP, quốc gia, loại trình duyệt); Cloudflare tự xoá sau 7 ngày. Mình chỉ dùng chúng để sửa lỗi và chặn phá hoại. Một địa chỉ IP (hoặc dải IP) chỉ bị lưu lâu hơn khi mình chặn nó vì lạm dụng, và mọi lệnh chặn đều có thời hạn.
 
 **Xác minh chống bot.** Trước lượt xem đầu tiên, trang chạy Cloudflare Turnstile — bước kiểm tra trình duyệt không phải bot thu thập nội dung; Cloudflare xử lý các tín hiệu kỹ thuật (như địa chỉ IP, đặc điểm trình duyệt) theo chính sách riêng của họ. Qua bước này, trình duyệt nhận một cookie thiết yếu duy nhất, `__Host-gate`, hiệu lực 48 giờ. Cookie chỉ chứa thời điểm hết hạn, một giá trị ngẫu nhiên và chữ ký — không có gì định danh bạn — và không bao giờ dùng để theo dõi. Công cụ tìm kiếm và dịch vụ xem trước liên kết đã được Cloudflare xác thực thì bỏ qua bước này; RSS, sitemap và các trang pháp lý luôn mở.
 
-**4. Báo lỗi (biểu mẫu duy nhất trên trang).** Nếu bạn chủ động gửi báo lỗi, những thứ sau được truyền và lưu dưới dạng GitHub issue riêng tư + thông báo Discord: mô tả của bạn, đường dẫn trang, user-agent trình duyệt, kích thước màn hình, cài đặt theme/ngôn ngữ, và — chỉ khi bạn để nguyên ô tick — các lỗi console gần nhất (có bản xem trước trước khi gửi). Địa chỉ IP không được lưu kèm báo cáo. Muốn xoá báo cáo đã gửi: liên hệ mình.
+**4. Báo lỗi (biểu mẫu duy nhất trên trang).** Nếu bạn chủ động gửi báo lỗi, những thứ sau được truyền và lưu dưới dạng issue trong một repo GitHub riêng tư (chỉ mình xem được), kèm một thông báo Discord: mô tả của bạn, đường dẫn trang, user-agent trình duyệt, kích thước màn hình, cài đặt theme/ngôn ngữ, và — chỉ khi bạn để nguyên ô tick — các lỗi console gần nhất (có bản xem trước trước khi gửi). Địa chỉ IP không được lưu kèm báo cáo. Muốn xoá báo cáo đã gửi: liên hệ mình.
 
-**5. Video nhúng.** Video YouTube chỉ tải sau khi bạn bấm, qua tên miền tăng cường riêng tư (youtube-nocookie.com). Trước khi bấm, chỉ có ảnh thumbnail tĩnh. Sau khi bấm, chính sách của YouTube áp dụng.
+**5. Video nhúng và ảnh trong widget.** Video YouTube chỉ tải sau khi bạn bấm, qua tên miền tăng cường riêng tư (youtube-nocookie.com). Trước khi bấm, ảnh thumbnail — cũng như icon game trong các widget ở trang chủ — là bản sao do chính trang này phục vụ, nên trình duyệt của bạn không kết nối tới YouTube hay Steam chỉ để hiển thị trang. Sau khi bấm, chính sách của YouTube áp dụng.
 
-**6. Lưu trữ cục bộ.** Trang web lưu vài tuỳ chọn nhỏ ngay trong trình duyệt của bạn: theme, ẩn/hiện thanh cuộn, cài đặt đọc, ghi nhận đã xem thông báo pháp lý, và (nếu bạn chơi mini-game offline) điểm cao nhất. Chúng không bao giờ rời thiết bị của bạn.
+**6. Lưu trữ cục bộ.** Trang web lưu vài tuỳ chọn nhỏ ngay trong trình duyệt của bạn: theme, ẩn/hiện thanh cuộn, cài đặt đọc, ghi nhận đã xem thông báo pháp lý, và (nếu bạn chơi mini-game offline) điểm cao nhất. Để dùng được khi mất mạng, service worker còn giữ trang offline và một số file script/style của chính trang trong bộ nhớ đệm của trình duyệt. Tất cả những thứ này không bao giờ rời thiết bị của bạn.
 
 **7. Email.** Mail gửi tới bất kỳ địa chỉ @poli0981.dev nào (contact@, privacy@, security@ và các địa chỉ theo chủ đề ghi trên trang) được chuyển vào hộp thư Google Workspace của mình (Google LLC xử lý theo điều khoản của họ) và lưu như thư từ thông thường.
 

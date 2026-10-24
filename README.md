@@ -13,8 +13,10 @@ content collections read directly from these paths, so the directory names here 
 | `stories/`  | `stories`  | `<series>/<chapter>.md` — the folder name is the series route segment |
 | `projects/` | `projects` | standalone schema (`name`, `tagline`, `stack`, `repo`, `year`…) |
 | `faq/`      | `faq`      | `q`, `lang`, `group` (`channel` / `dev` / `personal`), `order` |
-| `gallery/`  | `gallery`  | album **metadata only** — the images live in the site repo under `src/assets/gallery/<album>/` |
+| `gallery/`  | `gallery`  | album **metadata only**; photos are local files in the site repo (`src/assets/gallery/<album>/`) and/or R2 uploads listed in `gallery-photos/<album>.json` |
+| `gallery-photos/` | — | per-album R2 photo lists (`{ photos: [{ id, w, h, caption: { vi, en } }] }`), written by the admin |
 | `legal/`    | `legal`    | bilingual within one file (`## English` then `## Tiếng Việt`); both locale routes render the same document |
+| `now/`      | `now`      | the /now page, one file per locale (`updated` is required) |
 
 ## Editing
 
@@ -34,8 +36,14 @@ MDX files can only use components that exist there.
 
 ## Publishing a change
 
-Commit here, then bump the submodule pointer in the site repo — the site builds from the
-commit that repo has pinned, so a commit here alone does not deploy anything.
+Most edits happen in the admin (admin.poli0981.dev), which commits straight to `main` here.
+Its **Publish** button then runs the site repo's `content-bump` workflow: a PR that points the
+submodule at this repo's `main`, merged automatically once CI passes when only `.md`/`.json`
+changed (MDX runs code at build time, so it waits for a review).
+
+Editing by hand works the same way: commit here, then bump the submodule pointer in the site
+repo — the site builds from the commit that repo has pinned, so a commit here alone does not
+deploy anything.
 
 ## License
 
