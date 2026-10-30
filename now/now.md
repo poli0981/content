@@ -2,7 +2,7 @@
 title: "Bây giờ"
 lang: vi
 translationKey: now
-updated: 2026-08-10
+updated: 2026-10-30
 ---
 
 Giải trí một chút.
