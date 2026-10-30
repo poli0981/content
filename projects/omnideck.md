@@ -1,11 +1,11 @@
 ---
 lang: vi
-draft: true
+draft: false
 year: 2026
 name: OmniDeck
 tagline: All-in-one app. In beta.
 stack:
-  - c#
+  - C#
   - wpf
   - .NET
 repo: https://github.com/poli0981/OmniDeck
