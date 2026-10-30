@@ -5,13 +5,12 @@ translationKey: now
 updated: 2026-10-30
 ---
 
-Writing **Đêm không tiếng** — a serialised horror story, published at no fixed pace.
-Chapter 2 is out; chapter 3 is still more in my head than on the page.
+A bit of entertainment.
 
-Building `poli0981.dev`, the site you are reading. Lately most of the time has gone into
-things you cannot see: CSP, security headers, splitting content into its own repository.
+Finished Dark Souls III.
 
-Playing **AI Limit** and **Ninja Gaiden 4**, with the occasional visual novel when I want
-something slower.
+Continuing to maintain existing projects.
+
+There have been quite a few CVEs and security-related incidents lately :)
 
 Not taking on outside work. To reach me: [contact@poli0981.dev](mailto:contact@poli0981.dev).
