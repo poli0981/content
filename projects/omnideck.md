@@ -10,4 +10,7 @@ stack:
   - .NET
 repo: https://github.com/poli0981/OmniDeck
 status: active
+featured: false
 ---
+
+Đang ở beta :)
