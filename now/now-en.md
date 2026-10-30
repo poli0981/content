@@ -2,7 +2,7 @@
 title: "Now"
 lang: en
 translationKey: now
-updated: 2026-08-10
+updated: 2026-10-30
 ---
 
 Writing **Đêm không tiếng** — a serialised horror story, published at no fixed pace.
